@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación de Cumpleaños</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Formulario para ingresar el nombre -->
+      <div id="name-form" class="container">
+        <h1 class="welcome-text">¡Como es loco!</h1>
+        <p>Por favor, ingresa tu nombre perro:</p>
+        <div class="input-container">
+          <input type="text" id="visitor-name" placeholder="Tu nombre" autocomplete="off">
+          <button id="submit-name">Ver Invitación</button>
+        </div>
+      </div>
+
+      <!-- Invitación de cumpleaños (inicialmente oculta) -->
+      <div id="invitation" class="container hidden">
+        <div class="invitation-header">
+          <h1>¡<span id="guest-name"></span>!</h1>
+          <h2>Estás invitado pilin</h2>
+        </div>
+        
+        <div class="invitation-details">
+          <div class="detail-item">
+            <div class="icon">🎂</div>
+            <p>Celebro mis <span class="highlight">20 años</span></p>
+          </div>
+          
+          <div class="detail-item">
+            <div class="icon">📅</div>
+            <p>Viernes 28 de Febrero</p>
+          </div>
+          
+          <div class="detail-item">
+            <div class="icon">🕗</div>
+            <p>8:00 PM</p>
+          </div>
+          
+          <div class="detail-item">
+            <div class="icon">📍</div>
+            <p>En mi casa</p>
+          </div>
+        </div>
+        
+        <div class="invitation-message">
+          <p>Ojito culeao será una noche tranquila para disfrutar de buena comida, 
+            conversaciones y divertirnos entre amigos. 
+            ¡Quizás después salgamos a dar una vuelta!</p>
+          <p>Te espero perrin.</p>
+        </div>
+        
+        <div class="confirmation">
+          <p>¿Cuento contigo?</p>
+          <div class="confirmation-buttons">
+            <button id="confirm-yes">¡Clarooooooo!</button>
+            <button id="confirm-maybe">Tal vez</button>
+          </div>
+        </div>
+        
+        <div class="confetti-container" id="confetti"></div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
